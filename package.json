@@ -1,0 +1,27 @@
+{
+  "name": "gulp-minio-s3",
+  "version": "1.0.0",
+  "description": "Gulp plugin to upload files to minio s3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gulp",
+    "minio",
+    "s3"
+  ],
+  "author": {
+    "name": "Khalid Elshafie",
+    "url": "https://abolkog.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abolkog/gulp-minio-s3.git"
+  },
+  "bugs": {
+    "url": "https://github.com/abolkog/gulp-minio-s3/issues"
+  },
+  "homepage": "https://github.com/abolkog/gulp-minio-s3#readme"
+}
