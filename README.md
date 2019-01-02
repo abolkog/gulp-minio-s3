@@ -1,5 +1,8 @@
 # gulp-minio-s3
 
+[![Build Status](https://travis-ci.org/abolkog/gulp-minio-s3.svg?branch=master)](https://travis-ci.org/abolkog/gulp-minio-s3)
+![](https://img.shields.io/github/license/abolkog/gulp-minio-s3.svg)
+
 Gulp plugin to upload files to [minio](https://www.minio.io/) S3
 
 ## Usage
