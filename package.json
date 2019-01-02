@@ -26,6 +26,7 @@
   "homepage": "https://github.com/abolkog/gulp-minio-s3#readme",
   "dependencies": {
     "event-stream": "^4.0.1",
+    "mime-types": "^2.1.21",
     "minio": "^7.0.2",
     "plugin-error": "^1.0.1"
   }
