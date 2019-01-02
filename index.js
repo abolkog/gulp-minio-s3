@@ -20,8 +20,9 @@ const throwError = msg => {
 /**
  * @param {String} bucketName bucket name
  * @param {Object} opts Minio Client Options
+ * @param {String} prefix Optional: Prefix (dir name) to be used when uploading
  */
-const minioS3 = (bucketName, opts) => {
+const minioS3 = (bucketName, opts, prefix) => {
   //Check buckername
   if (!bucketName) {
     throwError('Bucket name is required');
@@ -46,8 +47,11 @@ const minioS3 = (bucketName, opts) => {
       'Content-Type': lookup(file.relative)
     };
 
+    //Object name
+    const objectName = prefix ? `${prefix}/${file.relative}` : file.relative;
+
     log(colors.cyan(`Uploading ${file.relative} ...`));
-    minio.fPutObject(bucketName, file.relative, file.path, fileMeta, err => {
+    minio.fPutObject(bucketName, objectName, file.path, fileMeta, err => {
       if (err) {
         throwError(`Faild to upload file ${file.path}. Reason is ${err}`);
       }
